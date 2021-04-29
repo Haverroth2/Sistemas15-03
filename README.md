@@ -1,2 +1,29 @@
-# Sistemas15-03
-atividade da aula de Desenvolvimento de Sistemas 15/03
+//pacotes importados
+import sample.model.Caminhao;
+import sample.model.Carro;
+
+//classe main
+public class Main {
+
+    public static void main(String[] args) {
+
+//Atributos
+        Carro carro = new Carro("Fiesta");
+        carro.setMarca("Ford", "A empresa.....");
+        carro.setDesc("Carro do prof");
+        carro.setnPortas(4);
+        System.out.println(carro + "\n\n");
+
+//métodos
+        Carro carro2 = new Carro("Palio");
+        carro2.setMarca("Fiat","A empresa.....");
+        carro2.setnPortas(4);
+        System.out.println(carro2 + "\n\n");
+
+        Caminhao caminhao = new Caminhao("S460");
+        caminhao.setMarca("Scania", "A empresa.....");
+        caminhao.setnEixos(6);
+        System.out.println(caminhao + "\n\n");
+
+    }
+}
